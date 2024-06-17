@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+    <div class="h-full">
+
+        <header class="h-[20vh] 2xl:h-[12vh] bg-emerald-800 grid">
+            <h1 class="text-center m-auto text-3xl text-white font-semibold">Agenda de Contactos</h1>
+        </header>
+
+        <form class="bg-white h-2/5 w-2/6 2xl:w-1/4 2xl:h-1/4 m-auto mt-4 p-4" id="form">
+            <h2 class="text-lg font-semibold pt-2">Agregar Contacto</h2>
+            <input type="text" class="border bg-gray-100 w-full rounded p-1 my-4" placeholder="Nombre">
+            <input type="number" class="border bg-gray-100 w-full rounded p-1 mb-3" placeholder="Teléfono">
+            <button class="w-full bg-emerald-800 p-1 rounded text-white">Agregar</button>
+        </form>
+
+        <div class="h-[12vh] w-2/6 2xl:w-1/4 2xl:h-[8vh] bg-white m-auto border mt-4 flex items-center px-8">
+            <input onkeydown="search(this)" type="text" class="h-8 w-full bg-gray-100 p-1 border rounded aling-center" placeholder="Buscar...">
+        </div>
+
+        <div class="h-full w-2/6 2xl:w-1/4 bg-white m-auto border mt-4 flex items-center py-6 px-8">
+            <ul id="contactList" class="list-disc w-full">
+                
+            </ul>
+        </div>
+
+
+    </div>
+    
+    
+
+    <script src="/app.js"></script>
+</body>
+</html>
